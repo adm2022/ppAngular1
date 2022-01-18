@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-story-editor',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./story-editor.component.scss']
 })
 export class StoryEditorComponent implements OnInit {
+
+  summary = new FormControl('');
 
   constructor() { }
 
