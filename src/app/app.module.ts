@@ -17,11 +17,13 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { StoryEditorComponent } from './story-editor/story-editor.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StoryEditorComponent
+    StoryEditorComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
