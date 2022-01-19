@@ -18,12 +18,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { StoryEditorComponent } from './story-editor/story-editor.component';
 import { AboutComponent } from './about/about.component';
+import { MeetingComponent } from './meeting/meeting.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoryEditorComponent,
-    AboutComponent
+    AboutComponent,
+    MeetingComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
