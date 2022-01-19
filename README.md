@@ -29,6 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Deply to github pages
 
 1. `ng build --base-href ppAngular1`
-2. `mv dist docs`
+2. `mv dist/pp1 docs`
 3. `git add . && git commit -m 'ng build --base-href ppAngular1'`
 4. `git push`
