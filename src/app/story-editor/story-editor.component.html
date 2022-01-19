@@ -1,3 +1,10 @@
 <p>story-editor works!</p>
-<label for="summary">Summary: </label>
-<input id="summary" type="text" [formControl]="summary">
+<form [formGroup]='storyForm' (ngSubmit)="onSubmit()">
+    <label for="summary">Summary: </label>
+    <input id="summary" type="text" formControlName="summary">
+    <label for="description">Description: </label>
+    <input id="description" type="text" formControlName="description">
+    <label for="points">Points: </label>
+    <input id="points" type="text" formControlName="points">
+    <button type="submit">Save</button>
+</form>

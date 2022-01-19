@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-story-editor',
@@ -8,11 +8,20 @@ import { FormControl } from '@angular/forms';
 })
 export class StoryEditorComponent implements OnInit {
 
-  summary = new FormControl('');
+  storyForm = this.formBuilder.group({
+    summary: new FormControl(''),
+    description: new FormControl(''),
+    points: new FormControl('')
+  });
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    console.log(`ngOnsubmit`);
+    console.log(this.storyForm.value);
   }
 
 }
