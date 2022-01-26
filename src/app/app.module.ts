@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatSliderModule } from '@angular/material/slider';
 import {MatMenuModule} from '@angular/material/menu';
@@ -37,7 +38,7 @@ import { MeetingComponent } from './meeting/meeting.component';
     MatTabsModule,
     AppRoutingModule,
     MatSidenavModule,
-    MatListModule,
+    MatListModule,HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],
