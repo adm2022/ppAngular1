@@ -1,13 +1,24 @@
 <p>story-editor works!</p>
+
+
 <form [formGroup]='storyForm' (ngSubmit)="onSubmit()">
+<table>
+    <tr *ngFor="let story of stories">
+        <td>
     <label for="summary">Summary: </label>
     <input id="summary" type="text" formControlName="summary">
-    <hr/>
+        </td>
+        <td>
     <label for="description">Description: </label>
     <input id="description" type="text" formControlName="description">
-    <hr/>
+        </td>
+        <td>
     <label for="points">Points: </label>
     <input id="points" type="text" formControlName="points">
-    <hr/>
+        </td>
+        <td>
     <button type="submit">Save</button>
+        </td>
+    </tr>
+</table>
 </form>
